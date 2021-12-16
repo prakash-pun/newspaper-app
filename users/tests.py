@@ -1,3 +1,6 @@
 from django.test import TestCase
 
-# Create your tests here.
+class BlogTest(TestCase):
+
+    def test_post_content(self):
+        self.assertEqual('My Test', 'My Test')
